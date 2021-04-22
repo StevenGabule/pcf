@@ -1,0 +1,103 @@
+<?php
+
+use App\Models\Province;
+use Illuminate\Database\Seeder;
+
+class ProvinceSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $province = [
+            ['name' => 'Bukidnon'],
+            ['name' => 'Zamboanga Sibugay'],
+            ['name' => 'Zamboanga del Sur'],
+            ['name' => 'Zamboanga del Norte'],
+            ['name' => 'Zambales'],
+            ['name' => 'Tawi-Tawi'],
+            ['name' => 'Tarlac'],
+            ['name' => 'Surigao del Sur'],
+            ['name' => 'Surigao del Norte'],
+            ['name' => 'Sulu'],
+            ['name' => 'Sultan Kudarat'],
+            ['name' => 'Southern Leyte'],
+            ['name' => 'South Cotabato'],
+            ['name' => 'Sorsogon'],
+            ['name' => 'Siquijor'],
+            ['name' => 'Shariff Kabunsuan'],
+            ['name' => 'Sarangani'],
+            ['name' => 'Samar'],
+            ['name' => 'Romblon'],
+            ['name' => 'Rizal'],
+            ['name' => 'RIYADH'],
+            ['name' => 'Quirino'],
+            ['name' => 'Quezon'],
+            ['name' => 'Pangasinan'],
+            ['name' => 'Pampanga'],
+            ['name' => 'Palawan'],
+            ['name' => 'Oriental Mindoro'],
+            ['name' => 'Occidental Mindoro'],
+            ['name' => 'Nueva Vizcaya'],
+            ['name' => 'Nueva Ecija'],
+            ['name' => 'Northern Samar'],
+            ['name' => 'Negros Oriental'],
+            ['name' => 'Negros Occidental'],
+            ['name' => 'Mountain Province'],
+            ['name' => 'Misamis Oriental'],
+            ['name' => 'Misamis Occidental'],
+            ['name' => 'Metro Manila'],
+            ['name' => 'Masbate'],
+            ['name' => 'Marinduque'],
+            ['name' => 'Maguindanao'],
+            ['name' => 'Leyte'],
+            ['name' => 'Lanao del Sur'],
+            ['name' => 'Lanao del Norte'],
+            ['name' => 'Laguna'],
+            ['name' => 'La Union'],
+            ['name' => 'Kalinga'],
+            ['name' => 'Italy'],
+            ['name' => 'Isabela'],
+            ['name' => 'Iloilo'],
+            ['name' => 'Ilocos Sur'],
+            ['name' => 'Ilocos Norte'],
+            ['name' => 'Ifugao'],
+            ['name' => 'Guimaras'],
+            ['name' => 'Eastern Samar'],
+            ['name' => 'Dinagat Islands'],
+            ['name' => 'Davao Oriental'],
+            ['name' => 'Davao del Sur'],
+            ['name' => 'Davao del Norte'],
+            ['name' => 'Cotabato'],
+            ['name' => 'Compostela Valley'],
+            ['name' => 'Cebu'],
+            ['name' => 'Cavite'],
+            ['name' => 'Catanduanes'],
+            ['name' => 'Capiz'],
+            ['name' => 'Camiguin'],
+            ['name' => 'Camarines Sur'],
+            ['name' => 'Camarines Norte'],
+            ['name' => 'Cagayan'],
+            ['name' => 'Bulacan'],
+            ['name' => 'Bohol'],
+            ['name' => 'Biliran'],
+            ['name' => 'Benguet'],
+            ['name' => 'Batangas'],
+            ['name' => 'Batanes'],
+            ['name' => 'Bataan'],
+            ['name' => 'Basilan'],
+            ['name' => 'Aurora'],
+            ['name' => 'Apayao'],
+            ['name' => 'Antique'],
+            ['name' => 'Albay'],
+            ['name' => 'Aklan'],
+            ['name' => 'Agusan del Sur'],
+            ['name' => 'Abra'],
+            ['name' => 'Agusan del Norte'],
+        ];
+        Province::insert($province);
+    }
+}

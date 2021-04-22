@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="smarket@localhost" uuid="42b34d13-48a7-41a3-980e-5c7293983dab">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/smarket</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="pcf_db@localhost" uuid="f9528973-ae59-4afd-bb8a-5b4def655398">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/pcf_db</jdbc-url>
+    </data-source>
+  </component>
+</project>

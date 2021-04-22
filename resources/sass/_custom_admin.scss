@@ -1,0 +1,32 @@
+body {
+    font-weight: 700;
+}
+
+.table-img-size {
+    width: 50px !important;
+}
+
+.nav-size {
+    font-size: 16px;
+    font-weight: bold;
+    color: #525c65 !important;
+
+    &:hover {
+        color: #3490dc !important;
+    }
+}
+
+.btn-started {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.no-hover:hover {
+    text-decoration: none;
+}
