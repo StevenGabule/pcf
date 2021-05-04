@@ -27,6 +27,19 @@ Route::get('/reports', 'PageController@reports')->name('reports');
 Route::get('/pre-registration', 'PageController@pre_registration')->name('pre-registration');
 Route::post('/pre-registration', 'StudentController@store')->name('student-registration');
 
+
+/*
+ * ========================================================
+ * PAGES ROUTES IN FRONT-END
+ * ========================================================
+ * */
+Route::get('/career-preps', 'PageController@career_preps')->name('career-preps');
+Route::get('/student-success', 'PageController@student_success')->name('student-success');
+Route::get('/school-requirements', 'PageController@schoolRequirements')->name('school-requirements');
+Route::get('/school-enrollment', 'PageController@schoolEnrollment')->name('school-enrollment');
+
+
+
 /*
  * =========================================================
  * ROOT/SUPER ADMIN ROUTE PATH

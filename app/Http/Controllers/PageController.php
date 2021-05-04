@@ -2,7 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{Award, Barangay, Bidding, City, Course, HighSchool, Province, Religion, ReportProcurement, Tribe};
+use App\Models\{Award,
+    Barangay,
+    Bidding,
+    City,
+    Course,
+    HighSchool,
+    Province,
+    Religion,
+    ReportProcurement,
+    StudentSuccess,
+    Tribe};
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -69,4 +79,26 @@ class PageController extends Controller
         $reports = ReportProcurement::latest()->get();
         return view('bidding', compact('reports'));
     }
+
+    public function career_preps()
+    {
+        return view('pages.careers.career_prep');
+    }
+
+    public function student_success()
+    {
+        $stories = StudentSuccess::paginate(15);
+        return view('pages.careers.student_success', compact('stories'));
+    }
+
+    public function schoolRequirements()
+    {
+        return view('pages.careers.requirements');
+    }
+
+    public function schoolEnrollment()
+    {
+        return view('pages.careers.enrollment_form');
+    }
+
 }

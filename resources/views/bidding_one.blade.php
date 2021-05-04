@@ -24,19 +24,22 @@
                         </div>
                     </div>
 
-                    <div class="card border-0 mt-3">
-                        <form action="" method="post">
-                            @csrf
-                            <div class="form-group">
+                    @guest
+                        <p class="text-center">Please <a href="{{ route('login') }}">sign-in</a> so you can able to post comments</p>
+                    @else
+                        <div class="card border-0 mt-3">
+                            <form action="" method="post">
+                                @csrf
+                                <div class="form-group">
                             <textarea name="message" class="form-control" rows="3"
                                       placeholder="Leave a message"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" name="submit" class="btn btn-info">Post</button>
-                            </div>
-                        </form>
-                    </div>
-
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" name="submit" class="btn btn-info">Post</button>
+                                </div>
+                            </form>
+                        </div>
+                    @endguest
                 </div>
             </div>
         </div>

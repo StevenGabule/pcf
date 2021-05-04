@@ -37,15 +37,14 @@
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Careers</a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item nav-size" href="#">Career prep</a>
-                        <a class="dropdown-item nav-size" href="#">Student access</a>
-                        <a class="dropdown-item nav-size" href="#">Requirements</a>
-                        <a class="dropdown-item nav-size" href="#">Enrollment form</a>
+                        <a class="dropdown-item nav-size" href="{{ route('career-preps') }}">Career prep</a>
+                        <a class="dropdown-item nav-size" href="{{ route('student-success') }}">Student success</a>
+                        <a class="dropdown-item nav-size" href="{{ route('school-requirements') }}">School Requirements</a>
                     </div>
 
                 </li>
 
-                <li class="nav-item dropdown">
+                {{--<li class="nav-item dropdown">
                     <a class="nav-link nav-size dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         For Enterprise
@@ -58,7 +57,7 @@
                         <a class="dropdown-item nav-size" href="#">Corporate social responsibility</a>
                         <a class="dropdown-item nav-size" href="#">About us</a>
                     </div>
-                </li>
+                </li>--}}
 
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-size dropdown-toggle" href="#" tabindex="-1" aria-disabled="true" id="navbarDropdown3" role="button"
