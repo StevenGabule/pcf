@@ -38,6 +38,8 @@ Route::get('/student-success', 'PageController@student_success')->name('student-
 Route::get('/school-requirements', 'PageController@schoolRequirements')->name('school-requirements');
 Route::get('/school-enrollment', 'PageController@schoolEnrollment')->name('school-enrollment');
 
+Route::get('/charts', 'PageController@charts')->name('charts');
+
 
 
 /*

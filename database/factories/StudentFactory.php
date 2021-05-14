@@ -7,6 +7,7 @@ use App\Models\{Barangay,
     City,
     Contact,
     ContactPerson,
+    Course,
     EducationBackground,
     HighSchool,
     HomeAddress,
@@ -21,6 +22,7 @@ $factory->define(Student::class, function (Faker $faker) {
     $gender = rand(1, 2);
     $height = ["5'4", "5'3", "5'2", "5'6", "5'1", "5'7", "5'8", "5'9"];
     $last_name = $faker->lastName;
+
     return [
         'last_school_id' => function () use ($faker) {
             $last_school = LastSchool::create([
@@ -42,7 +44,10 @@ $factory->define(Student::class, function (Faker $faker) {
         'weight' => rand(40, 80),
         'blood_type' => $faker->randomLetter,
         'citizenship' => 'Filipino',
-        'email' => $faker->freeEmail,
+        'course_id' => Course::pluck('id')->random(),
+        'section' => rand(1,5),
+        'year_enrolled' => 2014,
+        'email' => $faker->safeEmail,
         'birth_address_id' => function () use ($faker) {
             $birth_address = BirthAddress::create([
                 'birth_province_id' => Province::pluck('id')->random(),

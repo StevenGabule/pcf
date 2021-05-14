@@ -100,5 +100,9 @@ class PageController extends Controller
     {
         return view('pages.careers.enrollment_form');
     }
+    public function charts()
+    {
+        return view('charts');
+    }
 
 }
