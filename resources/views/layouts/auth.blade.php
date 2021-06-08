@@ -10,7 +10,6 @@
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link href="https://www.pcf.edu.ph/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     @stack('css')
-
 </head>
 <body>
 @yield('content')
